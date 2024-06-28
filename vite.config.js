@@ -3,6 +3,7 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 export default defineConfig({
     root:"./src",
+    base:"/Paralax/",
     publicDir:"../public",
     build:{
         outDir:"../dist",
