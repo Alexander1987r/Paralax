@@ -1,0 +1,76 @@
+@use "fonts" as*;
+@use "variables" as*;
+
+html{
+  position: relative;
+  box-sizing: border-box;
+}
+
+*,*::before,*::after{
+  box-sizing: inherit;
+}
+
+body{
+  position: relative;
+  overflow-x: hidden;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 16px;
+  color:#fff;
+  background-color:white;
+
+  line-height: 1.1;
+  -webkit-font-smoothign:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  text-rendering:optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
+
+}
+img,svg{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+svg{
+  max-height: 100%;
+}
+button{
+  display: block;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+h1,h2,h3,p,figure,fieldset{
+  margin: 0;
+}
+fieldset{
+  padding: 0;
+  border: none;
+}
+.visualy-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0,0,0,0);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.container{
+}
+
